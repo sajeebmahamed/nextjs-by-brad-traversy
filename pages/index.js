@@ -1,15 +1,9 @@
-import Head from 'next/head'
 import ArticleList from '../components/ArticleList';
 import { server } from '../config';
-import styles from '../styles/Layout.module.css'
 
 export default function Home({articles}) {
   return (
     <div>
-      <Head>
-        <title>  WeDev News </title>
-        <meta name="keywords" content="web dev programming" />
-      </Head>
       <ArticleList articles={articles} />
     </div>
   )
